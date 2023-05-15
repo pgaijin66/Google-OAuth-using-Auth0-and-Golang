@@ -1,6 +1,33 @@
 {{ template "header.html"}}
-<div class="bg-white">
-    <h3>You are logged in</h3>
-    <a href="/logout" class="text-blue-500 underline">Logout</a>
+<div style="background-color: #41688f;"  >
+    <div class="flex justify-center items-center h-screen">
+        <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white shadow-xl">
+            <div class="max-w-xs rounded overflow-hidden shadow-lg bg-whit p-5">
+                <div class="flex justify-center">
+                    <h1 class="text-gray-700 text-lg mb-4">You are logged in</h1>
+                </div>
+                <div class="flex justify-center">
+                    <img class="w-40 h-40 rounded-full border-4 border-black" src={{.Profile.Picture}} alt="Profile Picture">
+                </div>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">{{.Profile.Name}}</div>
+                  <p class="text-gray-700 text-base">
+                    Nickname: {{.Profile.Nickname}}
+                  </p>
+                  <p class="text-gray-700 text-base">
+                    Email: {{.Profile.Email}}
+                  </p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="px-6 pb-4">
+                        <a href="/logout" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full">
+                          Logout
+                        </a>
+                    </div>
+                </div>
+              </div>               
+              </div>
+        </div>
+      </div>
 </div>
 {{ template "footer.html"}}

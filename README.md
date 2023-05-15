@@ -11,7 +11,11 @@ $ go install
 
 ### Before running
 
-export environment variables as follows
+1. Create an web app in Auth0 portal and fetch values Dashboard > Application > Create application > Select "Regular Web Application" > Create
+
+2. Add callback URL in settings Settings > Allowed callback URls `http://localhost:9090/callback` and Allowed origins as `http://localhost:9090` > Save changes
+
+2. export secrets as environment variables as follows
 
 ```
 export AUTH0_DOMAIN='YOUR VALUE HERE';
