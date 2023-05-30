@@ -1,8 +1,6 @@
-### Auth0 golang
+### Google OAuth using Auth0 and Golang 
 
 Implementation of sign in using Google OAuth using Auth0 platform.
-
-
 
 ### Install dependencies
 
